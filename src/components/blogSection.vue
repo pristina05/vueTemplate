@@ -1,17 +1,21 @@
 <template>
-  <div>
+  <div class="sites-section" id="blog">
     <div class="container" id="app">
-      <div><h5 class="text-center mt-5 title">Blogs</h5></div>
+      <div><h5 class="text-center title">Blogs</h5></div>
 
       <div class="row">
         <div v-for="item in items" class="col-md-4 my-1" v-bind:key="item">
           <div class="card h-100 border-0">
             <img :src="item.img" />
             <div class="card-body">
-              <div class="card-title">-{{ item.name }}</div>
-              <p>june 17, 2019 by <span class="admin">Admin</span></p>
+              <div class="card-title">
+                <b>{{ item.name }}</b>
+              </div>
+              <p class="post">
+                june 17, 2019 by <span class="admin">Admin</span>
+              </p>
               <div>
-                <span>{{ item.content }}</span>
+                <span class="loreum-ipsum">{{ item.content }}</span>
               </div>
             </div>
           </div>
@@ -32,19 +36,19 @@ export default {
       items: [
         {
           img: image,
-          name: "Chris Smith",
+          name: "Lorem ipsum is placeholder",
           content:
             "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
         },
         {
           img: image1,
-          name: "Chris Smith",
+          name: "Lorem ipsum is placeholder",
           content:
             "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
         },
         {
           img: image2,
-          name: "Chris Smith",
+          name: "Lorem ipsum is placeholder",
           content:
             "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
         }
@@ -57,5 +61,9 @@ export default {
 @import "@/assets/scss/main.scss";
 .admin {
   color: $green;
+}
+
+.post {
+  color: $grey;
 }
 </style>

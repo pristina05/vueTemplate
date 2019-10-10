@@ -2,7 +2,7 @@
   <div class="bg-color">
     <div class="container  ">
       <div class="row ">
-        <div class="col-md-3  " v-for="item in items" v-bind:key="item">
+        <div class="col-xl-3  " v-for="item in items" v-bind:key="item">
           <!-- <font-awesome-icon :icon="['fas', 'tv']" /> -->
           <div class="icon d-flex">
             <div class="icon-name ">
@@ -46,7 +46,7 @@ export default {
           icon: ["fas", "tv"],
           name: "4353535",
 
-          content: "Finish"
+          content: "Finish coding"
         }
       ]
     };
@@ -62,5 +62,11 @@ export default {
 .icon-content {
   padding: 0px 10px;
   line-height: 15px;
+}
+@media screen and (max-width: 480px) {
+  .icon {
+    margin: 10px 0px;
+    justify-content: center;
+  }
 }
 </style>

@@ -1,17 +1,17 @@
 <template>
-  <div class="bg-color">
+  <div class="sites-section bg-color " id="testinomials">
     <div class="container" id="app">
       <div><h5 class="text-center mt-5 title">Testimonials</h5></div>
 
       <div class="row">
         <div v-for="item in items" class="col-md-4 my-1" v-bind:key="item">
-          <div class="card h-100 border-0">
+          <div class="img">
             <img :src="item.img" class="images" />
-            <div class="card-body">
-              <div>
-                <span>{{ item.content }}</span>
+            <div class="mt-3">
+              <div class="testimonial">
+                {{ item.content }}
               </div>
-              <div class="card-title">-{{ item.name }}</div>
+              <div class="mt-3 name">-{{ item.name }}</div>
             </div>
           </div>
         </div>
@@ -55,10 +55,22 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss/main.scss";
 .images {
-  width: 60px;
+  width: 82px;
+  height: 70px;
   border-radius: 50%;
 }
 .card {
   border: none;
+}
+.testimonial {
+  font-style: italic;
+}
+@media screen and (max-width: 480px) {
+  .name {
+    text-align: right;
+  }
+  .img {
+    text-align: center;
+  }
 }
 </style>
