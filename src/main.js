@@ -19,12 +19,12 @@ import {
   faFacebookF,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons"; //fab
-import { faSmile, faCoffee } from "@fortawesome/free-solid-svg-icons"; //fa
+import { faSmile, faCoffee,faPlus } from "@fortawesome/free-solid-svg-icons"; //fa
 import {} from "@fortawesome/free-regular-svg-icons"; //far
 import { faTv, faHeart } from "@fortawesome/free-solid-svg-icons"; //fas
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faTv, faHeart, faSmile, faCoffee);
+library.add(faTv, faHeart, faSmile, faCoffee,faPlus);
 library.add(fab);
 library.add(faTwitter, faFacebookF, faInstagram);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -38,6 +38,26 @@ var VueScrollTo = require("vue-scrollto");
 
 Vue.use(VueScrollTo);
 
+// vue-swiper
+import VueAwesomeSwiper from "vue-awesome-swiper";
+import "swiper/dist/css/swiper.css";
+
+Vue.use(VueAwesomeSwiper);
+import Swiper from "swiper";
+Swiper.use({
+  name: "pluginName",
+  params: {
+    pluginSwitch: false
+  },
+  on: {
+    init() {
+      if (!this.params.pluginSwitch) return;
+      // eslint-disable-next-line no-console
+      console.log("init");
+    }
+    // swiper callback...
+  }
+});
 // You can also pass in the default options
 Vue.use(VueScrollTo, {
   container: "body",

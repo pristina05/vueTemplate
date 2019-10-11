@@ -5,7 +5,9 @@
     <Services />
     <works />
     <fontSection />
+    <Studio />
     <testinomials />
+    <!-- <slidersection /> -->
     <blogSection />
     <footerSection />
   </div>
@@ -20,6 +22,9 @@ import fontSection from "@/components/fontSection.vue";
 import testinomials from "@/components/testinomials.vue";
 import blogSection from "@/components/blogSection.vue";
 import footerSection from "@/components/footerSection.vue";
+import Studio from "@/components/studio.vue";
+// import slidersection from "@/components/sliderSection.vue";
+
 export default {
   components: {
     headerSection,
@@ -27,6 +32,8 @@ export default {
     Services,
     works,
     fontSection,
+    Studio,
+    // slidersection,
     testinomials,
     blogSection,
     footerSection

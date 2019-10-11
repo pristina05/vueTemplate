@@ -2,9 +2,9 @@
   <div>
     <div class="header-img ">
       <!-- header -->
-      <div class="header " v-bind:on-scroll="handleScroll">
-        <!--  -->
-        <b-navbar toggleable="md" type="dark">
+      <div class="header">
+        <!-- navbar -->
+        <b-navbar toggleable="md" type="dark" fixed="top">
           <b-navbar-brand href="#">Mighty.</b-navbar-brand>
 
           <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -20,9 +20,7 @@
                 >Terms of Service</b-nav-item
               >
               <b-nav-item href="#" v-scroll-to="'#blog'">Privacy</b-nav-item>
-              <b-nav-item href="#" v-scroll-to="'#footer'"
-                >Contact Us</b-nav-item
-              >
+              <b-nav-item href="#" v-scroll-to="'#footer'"></b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -51,14 +49,17 @@
 
 <script>
 export default {
-  methods: {
-    handleScroll: (event, el) => {
-      if (window.scrollY >= 300) {
-        el.classList.add("fixed");
+  mounted() {
+    window.onscroll = () => {
+      const nav = document.querySelector("#navbar");
+      if (this.scrollY > 60) {
+        nav.className = "mainScroll";
       } else {
-        el.classList.remove("fixed");
+        // eslint-disable-next-line no-console
+        console.log("hdhdh", this.$route.params);
+        nav.className = "scroll";
       }
-    }
+    };
   }
 };
 </script>
@@ -75,8 +76,18 @@ export default {
   //   margin: 5px 40px;
   //   position: fixed;
   // }
-  .navbar {
+
+  #navbar {
     background-color: transparent;
+    z-index: 10000;
+  }
+  nav.scroll {
+    background-color: #a1572f;
+    color: #eef;
+  }
+  nav.mainScroll {
+    background-color: black;
+    color: #222;
   }
   .collapse ul li a {
     color: $white;
@@ -90,10 +101,7 @@ export default {
       color: $black;
     }
   }
-  .sticky {
-    position: fixed;
-    z-index: 10000;
-  }
+
   .scrolled {
     background-color: dodgerblue;
     transition: 0.3s;
@@ -115,9 +123,10 @@ export default {
   margin: 200px;
   color: white;
 }
+
 @media screen and (max-width: 460px) {
   .web {
-    margin: -26px;
+    margin: 102px;
   }
   .header {
     background-color: $grey;
