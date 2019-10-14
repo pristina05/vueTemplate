@@ -1,11 +1,15 @@
 <template>
   <div class="sites-section" id="blog">
     <div class="container" id="app">
-      <div><h5 class="text-center title">Blogs</h5></div>
+      <div data-aos="fade-down"><h5 class="text-center title">Blogs</h5></div>
 
       <div class="row">
         <div v-for="item in items" class="col-md-4 my-1" v-bind:key="item">
-          <div class="card h-100 border-0">
+          <div
+            class="card h-100 border-0"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img :src="item.img" />
             <div class="card-body">
               <div class="card-title">

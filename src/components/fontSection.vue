@@ -2,7 +2,11 @@
   <div class="bg-color">
     <div class="container  ">
       <div class="row ">
-        <div class="col-xl-3  " v-for="item in items" v-bind:key="item">
+        <div
+          class="col-md-3 col-xl-3  "
+          v-for="item in items"
+          v-bind:key="item"
+        >
           <!-- <font-awesome-icon :icon="['fas', 'tv']" /> -->
           <div class="icon d-flex">
             <div class="icon-name ">

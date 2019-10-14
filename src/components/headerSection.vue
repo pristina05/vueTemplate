@@ -20,7 +20,9 @@
                 >Terms of Service</b-nav-item
               >
               <b-nav-item href="#" v-scroll-to="'#blog'">Privacy</b-nav-item>
-              <b-nav-item href="#" v-scroll-to="'#footer'"></b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#footer'"
+                >Contact Us</b-nav-item
+              >
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -77,12 +79,15 @@ export default {
   //   position: fixed;
   // }
 
-  #navbar {
+  .navbar {
     background-color: transparent;
     z-index: 10000;
+    padding: 1px 45px;
   }
   nav.scroll {
-    background-color: #a1572f;
+    background-color: $black;
+    position: fixed;
+    width: 100%;
     color: #eef;
   }
   nav.mainScroll {
@@ -125,16 +130,15 @@ export default {
 }
 
 @media screen and (max-width: 460px) {
-  .web {
-    margin: 102px;
-  }
-  .header {
-    background-color: $grey;
-  }
   .header-img {
     width: 100%;
     height: 60vh;
     background-size: cover;
+
+    .navbar {
+      background-color: $grey;
+      padding: 5px 20px;
+    }
     .mighty {
       font-size: 20px;
       padding-top: 130px;
@@ -142,6 +146,9 @@ export default {
     .contact-btn {
       padding: 2px 20px;
     }
+  }
+  .web {
+    margin: 102px;
   }
   .content {
     font-size: 12px;

@@ -19,12 +19,12 @@ import {
   faFacebookF,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons"; //fab
-import { faSmile, faCoffee,faPlus } from "@fortawesome/free-solid-svg-icons"; //fa
+import { faSmile, faCoffee, faPlus } from "@fortawesome/free-solid-svg-icons"; //fa
 import {} from "@fortawesome/free-regular-svg-icons"; //far
 import { faTv, faHeart } from "@fortawesome/free-solid-svg-icons"; //fas
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faTv, faHeart, faSmile, faCoffee,faPlus);
+library.add(faTv, faHeart, faSmile, faCoffee, faPlus);
 library.add(fab);
 library.add(faTwitter, faFacebookF, faInstagram);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -37,6 +37,10 @@ import { scroller } from "vue-scrollto/src/scrollTo";
 var VueScrollTo = require("vue-scrollto");
 
 Vue.use(VueScrollTo);
+
+// aos animaiton
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // vue-swiper
 import VueAwesomeSwiper from "vue-awesome-swiper";
@@ -79,6 +83,9 @@ new Vue({
   scroller,
   components: {
     ProgressBar
+  },
+  created() {
+    AOS.init();
   },
   render: h => h(App)
 }).$mount("#app");

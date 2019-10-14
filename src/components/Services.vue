@@ -1,13 +1,15 @@
 <template>
   <div class="sites-section bg-color " id="services">
     <div class="container mt-5">
-      <div><h4 class="text-center mt-5 title">Our Services</h4></div>
+      <div data-aos="fade-down">
+        <h4 class="text-center mt-5 title">Our Services</h4>
+      </div>
 
       <!--  -->
       <div class="services">
         <div class="row">
           <div v-for="item in items" class="col-md-3 my-1 " v-bind:key="item">
-            <div class="card border-0">
+            <div class="card border-0" data-aos="fade-down-right">
               <span class="text-center mt-3">
                 <font-awesome-icon :icon="['fas', 'tv']" class="fa-1x" />
               </span>

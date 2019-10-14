@@ -1,7 +1,9 @@
 <template>
   <div class="sites-section">
     <div class="container mt-5">
-      <div><h4 class="text-center title">Our Works</h4></div>
+      <div data-aos="fade-down">
+        <h4 class="text-center title">Our Works</h4>
+      </div>
 
       <!--  -->
       <div>
@@ -20,7 +22,7 @@
             :key="thumbIndex"
             @click="index = thumbIndex"
           >
-            <div class="works">
+            <div class="works" data-aos="flip-left">
               <img
                 :src="require(`@/assets/images/` + thumb.img)"
                 class="images"

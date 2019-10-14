@@ -1,6 +1,9 @@
 <template>
   <div>
     <div class="container">
+      <div class="sites-section " data-aos="fade-down">
+        <h4 class="text-center title ">Our Studio</h4>
+      </div>
       <!--  Swiper Slider -->
       <swiper
         ref="mySwiper"
@@ -13,7 +16,7 @@
           :key="cardcontent.index"
           class="swiper-card"
         >
-          <div class="swiper-card-section">
+          <div class="swiper-card-section" data-aos="zoom-in">
             <div class="photo-image">
               <img :src="cardcontent.image" class="image" alt="ceo-photos" />
             </div>
@@ -81,13 +84,19 @@ export default {
         }
       ],
       swiperOption: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 10,
         freeMode: true,
 
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          }
         }
       }
     };
@@ -103,5 +112,9 @@ export default {
 }
 .card {
   width: 45vh;
+}
+.swiper-card-section {
+  margin: 20px 50px;
+  box-shadow: 5px 10px 8px #888888;
 }
 </style>
