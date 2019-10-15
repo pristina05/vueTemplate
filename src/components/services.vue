@@ -1,15 +1,20 @@
 <template>
   <div class="sites-section bg-color " id="services">
-    <div class="container mt-5">
+    <div class="container mt-3">
       <div data-aos="fade-down">
-        <h4 class="text-center mt-5 title">Our Services</h4>
+        <h4 class="text-center title">Our Services</h4>
       </div>
 
       <!--  -->
       <div class="services">
         <div class="row">
-          <div v-for="item in items" class="col-md-3 my-1 " v-bind:key="item">
-            <div class="card border-0" data-aos="fade-down-right">
+          <div
+            v-for="item in items"
+            class="col-md-6 col-sm-6 my-1 "
+            v-bind:key="item"
+            data-aos="fade-down"
+          >
+            <div class="card border-0">
               <span class="text-center mt-3">
                 <font-awesome-icon :icon="['fas', 'tv']" class="fa-1x" />
               </span>
@@ -28,6 +33,9 @@
         </div>
       </div>
     </div>
+    <!--  -->
+
+    <!-- ... -->
   </div>
 </template>
 <script>
@@ -38,6 +46,7 @@ export default {
       items: [
         {
           name: "Web Design",
+
           content:
             "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
         },

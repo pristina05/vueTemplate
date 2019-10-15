@@ -37,8 +37,11 @@
           </div>
 
           <!-- progressbar section -->
-          <div class="col-md-4 site-sections" data-aos="fade-down-right">
-            <h5 class="content-section">Our Expertise and Skills</h5>
+          <div
+            class="col-md-4 site-sections expertise"
+            data-aos="fade-down-right"
+          >
+            <h5>Our Expertise and Skills</h5>
             <small>writing</small>
 
             <!--  -->
@@ -74,9 +77,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/main.scss";
-.card-img {
-  // width: 300px;
-}
+
 .btn {
   padding: 6px 29px;
 }
@@ -137,6 +138,12 @@ export default {
   }
   .sites-section {
     padding: 2rem 0rem;
+  }
+  .img {
+    width: 217px;
+  }
+  .expertise {
+    margin-top: 5px;
   }
 }
 </style>

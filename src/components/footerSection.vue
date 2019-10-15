@@ -14,13 +14,15 @@
         <div class="col-md-4">
           <ul class="links ">
             <strong> Quick links </strong>
-            <li class="border-0 mt-3">
+            <li class="border-0 mt-3" v-scroll-to="'#aboutus'">
               About Us
             </li>
-            <li class=" border-0">Testinomials</li>
-            <li class="border-0">Terms of Service</li>
-            <li class=" border-0">Privacy</li>
-            <li class=" border-0">Contact Us</li>
+            <li class=" border-0" v-scroll-to="'#testinomials'">
+              Testinomials
+            </li>
+            <li class="border-0" v-scroll-to="'#services'">Terms of Service</li>
+            <li class=" border-0" v-scroll-to="'#blog'">Privacy</li>
+            <li class=" border-0" v-scroll-to="'#footer'">Contact Us</li>
           </ul>
         </div>
         <!-- connect -->

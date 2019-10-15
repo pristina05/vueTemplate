@@ -1,7 +1,7 @@
 <template>
   <div class="sites-section">
     <div class="container mt-5">
-      <div data-aos="fade-down">
+      <div data-aos="fade-down" >
         <h4 class="text-center title">Our Works</h4>
       </div>
 
@@ -18,7 +18,7 @@
           <div
             id="img"
             v-for="(thumb, thumbIndex) in images"
-            class="col-md-4 col-xs-12 my-1 images"
+            class="col-md-6 col-xs-12 my-1 images"
             :key="thumbIndex"
             @click="index = thumbIndex"
           >

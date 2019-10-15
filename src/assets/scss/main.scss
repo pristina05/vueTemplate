@@ -42,3 +42,8 @@ background-color: $b;
     display: block;
     
 }
+@media screen and (max-width: 800px) {
+    .sites-section{
+        padding: 2rem 0rem;
+    }
+}

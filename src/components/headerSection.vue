@@ -5,24 +5,20 @@
       <div class="header">
         <!-- navbar -->
         <b-navbar toggleable="md" type="dark" fixed="top">
-          <b-navbar-brand href="#">Mighty.</b-navbar-brand>
+          <b-navbar-brand>Mighty.</b-navbar-brand>
 
           <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
           <b-collapse is-nav id="nav_collapse">
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#" v-scroll-to="'#aboutus'"
-                >About US</b-nav-item
-              >
-              <b-nav-item href="#" v-scroll-to="'#testinomials'"
+              <b-nav-item v-scroll-to="'#aboutus'">About US</b-nav-item>
+              <b-nav-item v-scroll-to="'#testinomials'"
                 >Testimonials</b-nav-item
               >
-              <b-nav-item href="#" v-scroll-to="'#services'"
+              <b-nav-item v-scroll-to="'#services'"
                 >Terms of Service</b-nav-item
               >
-              <b-nav-item href="#" v-scroll-to="'#blog'">Privacy</b-nav-item>
-              <b-nav-item href="#" v-scroll-to="'#footer'"
-                >Contact Us</b-nav-item
-              >
+              <b-nav-item v-scroll-to="'#blog'">Privacy</b-nav-item>
+              <b-nav-item v-scroll-to="'#footer'">Contact Us</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -39,7 +35,7 @@
                 print, and publishing industries for previewing.
               </p>
               <button class="btn rounded-pill btn-dark contact-btn">
-                <small class=""> Contact US</small>
+                <small> Contact US</small>
               </button>
             </div>
           </div>
@@ -80,9 +76,9 @@ export default {
   // }
 
   .navbar {
-    background-color: transparent;
+    background-color: $grey;
     z-index: 10000;
-    padding: 1px 45px;
+    padding: 8px 40px;
   }
   nav.scroll {
     background-color: $black;
@@ -132,12 +128,13 @@ export default {
 @media screen and (max-width: 460px) {
   .header-img {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-size: cover;
 
     .navbar {
       background-color: $grey;
-      padding: 5px 20px;
+
+      padding: 6px 25px;
     }
     .mighty {
       font-size: 20px;
@@ -148,7 +145,7 @@ export default {
     }
   }
   .web {
-    margin: 102px;
+    margin: auto;
   }
   .content {
     font-size: 12px;

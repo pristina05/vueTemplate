@@ -16,7 +16,7 @@
           :key="cardcontent.index"
           class="swiper-card"
         >
-          <div class="swiper-card-section" data-aos="zoom-in">
+          <div class="card swiper-card-section" data-aos="zoom-in">
             <div class="photo-image">
               <img :src="cardcontent.image" class="image" alt="ceo-photos" />
             </div>
@@ -110,11 +110,12 @@ export default {
   height: 200px;
   display: block;
 }
-.card {
-  width: 45vh;
+
+.card-content {
+  padding: 17px;
 }
 .swiper-card-section {
   margin: 20px 50px;
-  box-shadow: 5px 10px 8px #888888;
+  box-shadow: 2px 2px 13px 10px #888888;
 }
 </style>

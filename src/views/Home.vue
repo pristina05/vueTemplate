@@ -15,8 +15,8 @@
 
 <script>
 import headerSection from "@/components/headerSection.vue";
-import AboutUs from "@/components/AboutUs.vue";
-import Services from "@/components/Services.vue";
+import AboutUs from "@/components/aboutUs.vue";
+import Services from "@/components/services.vue";
 import works from "@/components/works.vue";
 import fontSection from "@/components/fontSection.vue";
 import testinomials from "@/components/testinomials.vue";

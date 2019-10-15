@@ -1,8 +1,8 @@
 <template>
-  <div class="sites-section bg-color mt-5" id="testinomials">
+  <div class="sites-section bg-color mt-5 " id="testinomials">
     <div class="container" id="app">
       <div data-aos="fade-down">
-        <h5 class="text-center mt-5 title">Testimonials</h5>
+        <h5 class="text-center mt-5 title ">Testimonials</h5>
       </div>
 
       <div class="row">
@@ -69,6 +69,7 @@ export default {
 .testimonial {
   font-style: italic;
 }
+
 @media screen and (max-width: 480px) {
   .name {
     text-align: right;
