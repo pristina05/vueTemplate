@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-color">
+  <div class="bg-color font-section">
     <div class="container  ">
       <div class="row ">
         <div
@@ -71,6 +71,9 @@ export default {
   .icon {
     margin: 10px 0px;
     justify-content: center;
+  }
+  .font-section {
+    padding: 11px;
   }
 }
 </style>

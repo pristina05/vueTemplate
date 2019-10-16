@@ -18,10 +18,12 @@
               About Us
             </li>
             <li class=" border-0" v-scroll-to="'#testinomials'">
-              Testinomials
+              Testimonials
             </li>
             <li class="border-0" v-scroll-to="'#services'">Terms of Service</li>
-            <li class=" border-0" v-scroll-to="'#blog'">Privacy</li>
+            <li class="border-0" v-scroll-to="'#studio'">Studio</li>
+            <li class=" border-0" v-scroll-to="'#blog'">Blogs</li>
+            <li class=" border-0" v-scroll-to="'#blog'"></li>
             <li class=" border-0" v-scroll-to="'#footer'">Contact Us</li>
           </ul>
         </div>
@@ -48,17 +50,17 @@
             </span>
           </div>
           <!-- newsletter -->
-          <div class="newsletter mt-5">
+          <div class="newsletter mt-5 ">
             <strong>NewsLetter</strong>
-            <div class="form-group d-flex mt-3">
+            <div class="form-group d-flex mt-3 col-md-12">
               <input
                 type="email"
-                class="form-control"
+                class="form-control col-md-9"
                 id="email"
                 placeholder="enter email"
               />
               <span>
-                <button class="btn btn-lg btn-success rounded-pill ml-3">
+                <button class="btn btn-lg btn-success rounded-pill ml-3 ">
                   <small>Send</small>
                 </button></span
               >
@@ -66,7 +68,7 @@
           </div>
         </div>
       </div>
-      <!--  -->
+      <!--footer  -->
       <div class="sites-section">
         <p class="text-center ">
           Copyright &copy;2019 All right reserved | this template is made with
@@ -82,9 +84,7 @@ export default {};
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/main.scss";
-// .list-group-item {
-//   color: $green;
-// }
+
 ul li {
   padding: 5px 0px;
   &:hover {
@@ -100,9 +100,7 @@ ul li {
 .fa-facebook-f,
 .fa-twitter-square,
 .fa-instagram {
-  // background: $green;
   color: $green;
-  // border-radius: 50px;
 }
 .circle-icon {
   background: $light-grey;
@@ -138,6 +136,9 @@ input {
 @media screen and (max-width: 460px) {
   .links {
     margin-left: -37px;
+  }
+  .form-group {
+    padding-left: 0px;
   }
 }
 </style>

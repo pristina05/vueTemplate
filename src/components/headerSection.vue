@@ -2,27 +2,32 @@
   <div>
     <div class="header-img ">
       <!-- header -->
-      <div class="header">
+      <div id="list-example" class="header navbar">
         <!-- navbar -->
-        <b-navbar toggleable="md" type="dark" fixed="top">
+        <b-navbar pills toggleable="md" type="dark" fixed="top">
           <b-navbar-brand>Mighty.</b-navbar-brand>
 
           <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
           <b-collapse is-nav id="nav_collapse">
-            <b-navbar-nav class="ml-auto">
-              <b-nav-item v-scroll-to="'#aboutus'">About US</b-nav-item>
+            <b-navbar-nav pills class="ml-auto" v-b-scrollspy:nav-scroller>
+              <b-nav-item href="#aboutus" class="active">About US</b-nav-item>
               <b-nav-item v-scroll-to="'#testinomials'"
                 >Testimonials</b-nav-item
               >
               <b-nav-item v-scroll-to="'#services'"
                 >Terms of Service</b-nav-item
               >
-              <b-nav-item v-scroll-to="'#blog'">Privacy</b-nav-item>
+              <b-nav-item v-scroll-to="'#studio'">Studio</b-nav-item>
+              <b-nav-item href="#work-section" v-scroll-to="'#work'"
+                >Works</b-nav-item
+              >
+              <b-nav-item v-scroll-to="'#blog'">Blogs</b-nav-item>
               <b-nav-item v-scroll-to="'#footer'">Contact Us</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
       </div>
+      <!--  -->
 
       <!-- content -->
       <div class="container">
@@ -92,6 +97,9 @@ export default {
   }
   .collapse ul li a {
     color: $white;
+    &:hover {
+      color: $green;
+    }
   }
   .contact-btn {
     padding: 10px 40px;
@@ -149,6 +157,11 @@ export default {
   }
   .content {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-img {
+    margin-top: -7px;
   }
 }
 </style>

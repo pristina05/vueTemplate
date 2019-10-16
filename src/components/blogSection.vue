@@ -1,5 +1,5 @@
 <template>
-  <div class="sites-section" id="blog">
+  <div class="sites-section" id="blog" v-scroll-spy>
     <div class="container" id="app">
       <div data-aos="fade-down"><h5 class="text-center title">Blogs</h5></div>
 

@@ -38,14 +38,16 @@ var VueScrollTo = require("vue-scrollto");
 
 Vue.use(VueScrollTo);
 
-// scrollspy
-import Scrollspy from "vue2-scrollspy";
-// use default options
-Vue.use(Scrollspy);
+// scroll-spy
+var VueScrollactive = require("vue-scrollactive");
+Vue.use(VueScrollactive);
 
 // aos animaiton
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// vue-num scroll
+
 
 // vue-swiper
 import VueAwesomeSwiper from "vue-awesome-swiper";

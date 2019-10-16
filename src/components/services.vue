@@ -1,6 +1,6 @@
 <template>
-  <div class="sites-section bg-color " id="services">
-    <div class="container mt-3">
+  <div id="services" class="sites-section bg-color ">
+    <div class="container">
       <div data-aos="fade-down">
         <h4 class="text-center title">Our Services</h4>
       </div>
@@ -10,7 +10,7 @@
         <div class="row">
           <div
             v-for="item in items"
-            class="col-md-6 col-sm-6 my-1 "
+            class="col-lg-3 col-md-6 col-sm-6 my-1 "
             v-bind:key="item"
             data-aos="fade-down"
           >

@@ -1,11 +1,17 @@
 <template>
-  <div class="sites-section">
-    <div class="container mt-5">
-      <div data-aos="fade-down" >
-        <h4 class="text-center title">Our Works</h4>
+  <div class="sites-section" id="work">
+    <div class="container mt-3">
+      <div
+        data-spy="scroll"
+        data-target="#list-example"
+        data-offset="0"
+        class="scrollspy-example"
+        data-aos="fade-down"
+      >
+        <h4 id="work-section" class="text-center title">Our Works</h4>
       </div>
 
-      <!--  -->
+      <!-- lightgallery -->
       <div>
         <div class="row">
           <LightGallery
@@ -18,7 +24,7 @@
           <div
             id="img"
             v-for="(thumb, thumbIndex) in images"
-            class="col-md-6 col-xs-12 my-1 images"
+            class="col-lg-4 col-md-6 col-xs-12 my-1 images"
             :key="thumbIndex"
             @click="index = thumbIndex"
           >
@@ -33,14 +39,23 @@
         </div>
       </div>
     </div>
+    <!-- vue-number-scroll -->
+    <vns
+      :start="5"
+      :end="7999"
+      :times="55"
+      :speed="30"
+      style="font-size:40px"
+    />
   </div>
 </template>
 <script>
 import { LightGallery } from "vue-light-gallery";
-
+import vns from "vue-number-scroll";
 export default {
   components: {
-    LightGallery
+    LightGallery,
+    vns
   },
 
   data() {
@@ -53,7 +68,7 @@ export default {
         },
         {
           title: "img 2",
-          url: "@/assets/images/img1.jpeg",
+          src: "@/assets/images/img1.jpeg",
           img: "img1.jpeg"
         },
         { title: "img 3", img: "img2.jpeg" },
@@ -96,6 +111,9 @@ export default {
 @media screen and (max-width: 800px) {
   .sites-section {
     text-align: center;
+  }
+  .images {
+    margin: auto;
   }
 }
 </style>

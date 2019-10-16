@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="studio">
     <div class="container">
       <div class="sites-section " data-aos="fade-down">
         <h4 class="text-center title ">Our Studio</h4>

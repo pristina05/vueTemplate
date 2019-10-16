@@ -6,9 +6,11 @@
     <works />
     <fontSection />
     <Studio />
+    <!-- <scrollSpy /> -->
+    <!-- <videoSection /> -->
     <testinomials />
-    <!-- <slidersection /> -->
     <blogSection />
+
     <footerSection />
   </div>
 </template>
@@ -21,9 +23,11 @@ import works from "@/components/works.vue";
 import fontSection from "@/components/fontSection.vue";
 import testinomials from "@/components/testinomials.vue";
 import blogSection from "@/components/blogSection.vue";
+// import scrollSpy from "@/components/scrollSpy.vue";
 import footerSection from "@/components/footerSection.vue";
 import Studio from "@/components/studio.vue";
-// import slidersection from "@/components/sliderSection.vue";
+
+// import videoSection from "@/components/videoSection.vue";
 
 export default {
   components: {
@@ -33,7 +37,10 @@ export default {
     works,
     fontSection,
     Studio,
-    // slidersection,
+
+    // scrollSpy,
+    // videoSection,
+
     testinomials,
     blogSection,
     footerSection

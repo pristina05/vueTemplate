@@ -1,10 +1,10 @@
 <template>
-  <div class="sites-section">
+  <div class="sites-section scrollspy" id="aboutus">
     <div class="container mt-5">
-      <div class="AboutUS" id="aboutus">
+      <div class="AboutUS">
         <div class="row">
           <div class="col-md-4 site-sections" data-aos="fade-down-right">
-            <h5 class="content-section ">About Us</h5>
+            <h5 class="content-section " id="about-section">About Us</h5>
             <p class="loreum-ipsum">
               Lorem ipsum is placeholder text commonly used in the graphic,
               print, and publishing industries for previewing.
@@ -77,6 +77,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/main.scss";
+body {
+  position: relative;
+}
 
 .btn {
   padding: 6px 29px;
@@ -86,8 +89,8 @@ export default {
 }
 .img {
   position: relative;
-  width: 50%;
-  width: 300px;
+  // width: 50%;
+  // width: 300px;
 
   &:hover .overlay {
     opacity: 1;
@@ -139,8 +142,11 @@ export default {
   .sites-section {
     padding: 2rem 0rem;
   }
+  .card-img {
+    max-width: 100%;
+  }
   .img {
-    width: 217px;
+    width: 100%;
   }
   .expertise {
     margin-top: 5px;
