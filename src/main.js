@@ -38,6 +38,11 @@ var VueScrollTo = require("vue-scrollto");
 
 Vue.use(VueScrollTo);
 
+// scrollspy
+import Scrollspy from "vue2-scrollspy";
+// use default options
+Vue.use(Scrollspy);
+
 // aos animaiton
 import AOS from "aos";
 import "aos/dist/aos.css";
