@@ -27,6 +27,7 @@
     "vue-scrollactive": "^0.8.0",
     "vue-scrollto": "^2.17.1",
     "vue-simple-progress": "^1.1.0",
+    "vue-youtube-embed": "^2.2.2",
     "vue2-scrollspy": "^2.3.1",
     "vuex": "^3.0.1"
   },

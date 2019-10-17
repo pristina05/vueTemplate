@@ -40,22 +40,22 @@
       </div>
     </div>
     <!-- vue-number-scroll -->
-    <vns
+    <!-- <vns
       :start="5"
       :end="7999"
       :times="55"
       :speed="30"
       style="font-size:40px"
-    />
+    /> -->
   </div>
 </template>
 <script>
 import { LightGallery } from "vue-light-gallery";
-import vns from "vue-number-scroll";
+// import vns from "vue-number-scroll";
 export default {
   components: {
-    LightGallery,
-    vns
+    LightGallery
+    // vns
   },
 
   data() {

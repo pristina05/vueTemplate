@@ -48,6 +48,9 @@ import "aos/dist/aos.css";
 
 // vue-num scroll
 
+// youtube
+import VueYouTubeEmbed from "vue-youtube-embed";
+Vue.use(VueYouTubeEmbed);
 
 // vue-swiper
 import VueAwesomeSwiper from "vue-awesome-swiper";

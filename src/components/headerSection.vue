@@ -39,9 +39,51 @@
                 Lorem ipsum is placeholder text commonly used in the graphic,
                 print, and publishing industries for previewing.
               </p>
-              <button class="btn rounded-pill btn-dark contact-btn">
-                <small> Contact US</small>
-              </button>
+              <!-- <button
+                class="btn rounded-pill btn-dark contact-btn"
+                data-toggle="modal"
+                data-target="#myModal"
+              > </button>-->
+              <b-button
+                v-b-modal.modal-1
+                class="btn rounded-pill btn-dark contact-btn"
+              >
+                <small> Contact US</small></b-button
+              >
+
+              <b-modal id="modal-1" title="BootstrapVue">
+                <p class="my-4">Hello from modal!</p>
+              </b-modal>
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +174,9 @@ export default {
   margin: 200px;
   color: white;
 }
-
+.modal-dialog {
+  width: 200px;
+}
 @media screen and (max-width: 460px) {
   .header-img {
     width: 100%;

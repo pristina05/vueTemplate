@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import headerSection from "@/components/headerSection.vue";
+// import headerSection from "@/components/headerSection.vue";
 import AboutUs from "@/components/aboutUs.vue";
 import Services from "@/components/services.vue";
 import works from "@/components/works.vue";
@@ -24,14 +24,14 @@ import fontSection from "@/components/fontSection.vue";
 import testinomials from "@/components/testinomials.vue";
 import blogSection from "@/components/blogSection.vue";
 // import scrollSpy from "@/components/scrollSpy.vue";
-import footerSection from "@/components/footerSection.vue";
+// import footerSection from "@/components/footerSection.vue";
 import Studio from "@/components/studio.vue";
 
 // import videoSection from "@/components/videoSection.vue";
 
 export default {
   components: {
-    headerSection,
+    // headerSection,
     AboutUs,
     Services,
     works,
@@ -42,8 +42,8 @@ export default {
     // videoSection,
 
     testinomials,
-    blogSection,
-    footerSection
+    blogSection
+    // footerSection
   }
 };
 </script>

@@ -4,13 +4,13 @@
     <div id="databinding"></div>
     <!-- @mixin scss -->
     <div>
-      <h4>Mixins</h4>
+      <h4 class="text-center">Mixins</h4>
       <div class="container">
         <div class="row">
           <div v-for="item in items" class="col-md-4 my-1" v-bind:key="item">
             <div>
-              <div class="img">
-                <img :src="item.img" class="images" />
+              <div class="images">
+                <img :src="item.img" class="img" />
               </div>
               <div class="mt-3">
                 <div class="testimonial">
@@ -33,10 +33,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.images {
-  width: 82px;
-  height: 70px;
-  border-radius: 50%;
-}
-</style>
+<style lang="scss"></style>
