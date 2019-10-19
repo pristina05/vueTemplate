@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <button>{{ name }}</button>
     <div class="card border-0">
       <div v-for="item in items" v-bind:key="item">
         <div class="img-section d-flex ">
@@ -17,11 +18,16 @@
       </div>
       <!--  -->
       <div>
+        {{ email }}
+      </div>
+      <!--  -->
+      <div>
         <slot name="title"></slot>
         <slot name="body"></slot>
         <slot name="subtitle"></slot>
       </div>
     </div>
+    <!--  -->
 
     <!-- child -->
     <!-- <div>
@@ -36,7 +42,7 @@ import image from "@/assets/images/header_img.jpeg";
 import image1 from "@/assets/images/img1.jpeg";
 import image2 from "@/assets/images/img2.jpeg";
 export default {
-  props: ["name", "handleClick", "firstname", "psuedoSlot"],
+  props: ["name", "handleClick", "firstname", "psuedoSlot", "email"],
   data: function() {
     return {
       items: [

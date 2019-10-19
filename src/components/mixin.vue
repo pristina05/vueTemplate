@@ -23,12 +23,22 @@
         </div>
       </div>
     </div>
+    <!-- v-on click -->
+    <div class="container mt-5" id="example-1">
+      <button v-on:click="counter += 1">Add {{ counter }}</button>
+      <p>The button above has been clicked {{ counter }} times.</p>
+    </div>
   </div>
 </template>
 <script>
 import productmixin from "../views/mixins/productmixin";
 
 export default {
+  data() {
+    return {
+      counter: 0
+    };
+  },
   mixins: [productmixin]
 };
 </script>
